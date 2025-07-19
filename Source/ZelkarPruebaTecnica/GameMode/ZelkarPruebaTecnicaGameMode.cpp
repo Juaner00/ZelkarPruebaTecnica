@@ -1,8 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "ZelkarPruebaTecnicaGameMode.h"
-#include "ZelkarPruebaTecnicaCharacter.h"
 #include "UObject/ConstructorHelpers.h"
+#include "ZelkarPruebaTecnica/UI/ZelkarHUD.h"
 
 AZelkarPruebaTecnicaGameMode::AZelkarPruebaTecnicaGameMode()
 {
@@ -12,4 +12,6 @@ AZelkarPruebaTecnicaGameMode::AZelkarPruebaTecnicaGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+
+	HUDClass = AZelkarHUD::StaticClass();
 }
