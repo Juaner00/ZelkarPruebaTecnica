@@ -11,12 +11,15 @@ class ZELKARPRUEBATECNICA_API UItem : public UPrimaryDataAsset
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 	FString Name;
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 	FString Description;
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
+	UTexture2D* Icon;
+	
+	UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
 	int Cost;
 };
